@@ -2,14 +2,13 @@ var express = require('express');
 var router = express.Router();
 var flightsCtrl = require('../controllers/flights');
 
-// all routes start with '/flights'
+// All routes start with '/movies'
 
 // GET /flights index
 router.get('/', flightsCtrl.index);
-// GET /flights/new 
+// GET /flights/new
 router.get('/new', flightsCtrl.new);
-// POST /movies
-
-
+// POST /flights
+// router.post('/', flightsCtrl.create);
 
 module.exports = router;
