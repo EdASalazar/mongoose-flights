@@ -16,10 +16,12 @@ const flightSchema = new Schema({
         type: Number, required: true
     },
     departs: {
-        type: Number,
+        //have this set to date and not number. 
+        type: Date,
+        // default date not working yet. 
         default: function() {
-            return  (new Date().getFullYear() +1);
-        }
+            return  new Date().getFullYear();
+        },
     },
 }, {
     timestamps: true

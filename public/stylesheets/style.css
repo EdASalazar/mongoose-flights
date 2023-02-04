@@ -13,6 +13,7 @@ nav {
   height: 5vh;
   align-items: center;
   border: solid .25vh darkgray;
+  font-weight: 800;
 }
 
 label {
