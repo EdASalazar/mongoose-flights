@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var moviesCtrl = requires('.../controllers/flight');
+// var moviesCtrl = require('.../controllers/flight');
 
 // all routes start with '/flights'
 
