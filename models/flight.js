@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 // Shortcut to the mongoose.Schema class
 const Schema = mongoose.Schema;
 
-const movieSchema = new Schema({
+const flightSchema = new Schema({
     airline: { 
         type: String, 
         enum: ['American Airlines', 'Southwest', 'United'] 
@@ -22,3 +22,5 @@ const movieSchema = new Schema({
         }
     },
 });
+
+module.exports = mongoose.model('Flight', flightSchema);
