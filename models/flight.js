@@ -16,11 +16,10 @@ const flightSchema = new Schema({
         type: Number, required: true
     },
     departs: {
-        //have this set to date and not number. 
-        type: Date,
-        // default date not working yet. 
+        type: Date, 
+        // can't get this to wokr
         default: function() {
-            return  new Date().getFullYear();
+            return new Date().getFullYear;
         },
     },
 }, {
