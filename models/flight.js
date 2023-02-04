@@ -14,7 +14,7 @@ const flightSchema = new Schema({
     },
     flightNo: {
         // need to use regex to make it 10 to 9999
-        type: Number, required: true,
+        type: Number,
         minlength: 2,
         maxLength: 4,
     },
