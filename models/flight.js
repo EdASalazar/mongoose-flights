@@ -13,14 +13,16 @@ const flightSchema = new Schema({
         default: 'DEN'
     },
     flightNo: {
-        type: Number, required: true
+        // need to use regex to make it 10 to 9999
+        type: Number, required: true,
+        minlength: 2,
+        maxLength: 4,
     },
     departs: {
         type: Date, 
-        // can't get this to wokr
-        default: function() {
-            return new Date().getFullYear;
-        },
+        // can't get this to work
+        default: Date.now
+        
     },
 }, {
     timestamps: true
