@@ -15,14 +15,14 @@ const flightSchema = new Schema({
     flightNo: {
         // need to use regex to make it 10 to 9999
         type: Number,
-        minlength: 2,
-        maxLength: 4,
+        required: true,
+        min: 10,
+        max: 9999,
     },
     departs: {
         type: Date, 
         // can't get this to work
-        default: Date.now
-        
+        default: Date.now() + 365*24*60*60000
     },
 }, {
     timestamps: true

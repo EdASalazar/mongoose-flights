@@ -21,3 +21,6 @@ label {
   margin-top: .25vh;
 }
 
+td {
+  border: solid lightgray .1vh;
+}
