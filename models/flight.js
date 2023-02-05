@@ -13,7 +13,6 @@ const flightSchema = new Schema({
         default: 'DEN'
     },
     flightNo: {
-        // need to use regex to make it 10 to 9999
         type: Number,
         required: true,
         min: 10,
@@ -21,7 +20,6 @@ const flightSchema = new Schema({
     },
     departs: {
         type: Date, 
-        // can't get this to work
         default: Date.now() + 365*24*60*60000
     },
 }, {
