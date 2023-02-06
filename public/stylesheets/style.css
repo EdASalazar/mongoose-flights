@@ -41,3 +41,9 @@ td {
   font-weight: bold;
 }
 
+
+
+#add-arrival-form input[type="submit"] {
+  width: 8rem;
+  margin-bottom: 2rem;
+}
