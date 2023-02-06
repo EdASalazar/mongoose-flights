@@ -2,6 +2,19 @@ const mongoose = require('mongoose');
 // Shortcut to the mongoose.Schema class
 const Schema = mongoose.Schema;
 
+const destinationSchema = new Schema({
+    airport: {
+        type: String,
+        enum: ['AUS', 'DFW', 'DEN', 'LAX', 'San'],
+    },
+    arrival: {
+        type: Date,
+    },
+}, {
+    timestamps: true
+});
+
+
 const flightSchema = new Schema({
     airline: { 
         type: String, 
