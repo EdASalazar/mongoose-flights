@@ -35,7 +35,7 @@ const flightSchema = new Schema({
         type: Date, 
         default: Date.now() + 365*24*60*60000
     },
-    destinatoins: [destinationSchema],
+    destinations: [destinationSchema],
 }, {
     timestamps: true
 });

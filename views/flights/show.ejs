@@ -11,6 +11,22 @@
     <div>Departure Date: </div>
     <div><%= flight.departs %></div>
   </section>
-
+  <br><br><h2>Arrival Information:</h2>
+    <form id="add-arrival-form" methods="POST" action="/flights/<%= flight.id %>/arrival">
+        <label>Airport:
+            <select name="airport">
+              <option value=""></option>
+              <option value="AUS">AUS</option>
+              <option value="DFW">DFW</option>
+              <option value="DEN">DEN</option>
+              <option value="LAX">LAX</option>
+              <option value="SAN">SAN</option>
+            </select>
+        </label><br>
+        <label>Departure Date:
+            <input type="datetime-local" name="arrival"> 
+          </label><br>
+          <input type="submit" value="Add Arrival">
+    </form>
 
 <%- include('../partials/footer') %>
