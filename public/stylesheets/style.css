@@ -8,6 +8,11 @@ a {
   color: #00B7FF;
 }
 
+a:hover {
+  background-color: black;
+  color: white;
+}
+
 nav {
   display: flex;
   background-color: darkgray;
