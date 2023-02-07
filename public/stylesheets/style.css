@@ -39,6 +39,9 @@ td {
 
 #show-page div:nth-child(even) {
   font-weight: bold;
+  background-color: white;
+  border: darkgray solid .25vh;
+  width: 50%;
 }
 
 
