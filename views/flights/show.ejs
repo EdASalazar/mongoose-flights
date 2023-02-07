@@ -10,17 +10,14 @@
     <div><%= flight.flightNo %></div>
     <div>Departure Date: </div>
     <div><%= flight.departs %></div>
-  
-
-    <tbody>
+    <div>Destionation Information:</div><br>
         <% flight.destinations.forEach(function(f) { %>
-          <tr>
-            <td>Destionation Airport</td>
-            <td><%= f.airport %></td>
-            
-          </tr>
+    <div><%= f.airport %></div>
+    <div><%= f.arrival %></div>
+    
+
         <% }); %>
-      </tbody>
+     
 
 
   </section>
