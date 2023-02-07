@@ -10,13 +10,15 @@
     <div><%= flight.flightNo %></div>
     <div>Departure Date: </div>
     <div><%= flight.departs %></div>
-    <div>Arrival  Info: </div>
-    <div><%= flight.destinations %></div>
+    <div>Departure Date: </div>
+    <div><%= flight.departs %></div>
+ 
+
 
   </section>
 
   <br><br><h2>Destination Information:</h2>
-    <form id="add-arrival-form" methods="POST" action="/flights/<%= flight.id %>/destinations">
+    <form id="add-arrival-form" method="POST" action="/flights/<%= flight._id %>/destinations">
         <label>Airport:
             <select name="airport">
               <option value=""></option>
@@ -32,5 +34,7 @@
           </label><br>
           <input type="submit" value="Add Arrival">
     </form>
+
+
 
 <%- include('../partials/footer') %>
