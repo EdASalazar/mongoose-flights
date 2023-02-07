@@ -10,10 +10,11 @@
     <div><%= flight.flightNo %></div>
     <div>Departure Date: </div>
     <div><%= flight.departs %></div>
-    <div>Destionation Information:</div><br>
         <% flight.destinations.forEach(function(f) { %>
-    <div><%= f.airport %></div>
-    <div><%= f.arrival %></div>
+            <div>Destionation Airport:</div>
+            <div><%= f.airport %></div>
+            <div>Destination Date:</div>
+            <div><%= f.arrival %></div>
     
 
         <% }); %>

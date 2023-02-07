@@ -47,3 +47,8 @@ td {
   width: 8rem;
   margin-bottom: 2rem;
 }
+
+#index-table {
+  background-color: white;
+  border: solid darkgray .25vh;
+}
