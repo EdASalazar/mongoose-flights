@@ -8,6 +8,8 @@ module.exports = {
 };
 
 function create(req, res) {
+    // get flight from the req.params.id
+    // push the seat and price to the ticket objct
     let flight = (req.params.id);
     flight.tickets.push(req.body);
     flight.save(function (err) {
