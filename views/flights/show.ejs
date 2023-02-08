@@ -46,3 +46,12 @@
 
 
 <%- include('../partials/footer') %>
+
+<form id="add-ticket-form" action="/flights/<%= flight._id %>/tickets" method="POST">
+   <label>Seat:
+        <input type="text"></input>
+    </label>Price:
+        <input type="number"></input>  
+    </label>
+    <input type="submit" value="Update Ticket">
+</form>
