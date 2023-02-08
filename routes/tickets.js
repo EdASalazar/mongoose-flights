@@ -7,5 +7,9 @@ var ticketsCtrl = require('../controllers/tickets');
 
 router.post('/flights/:id/tickets', ticketsCtrl.create);
 
+// GET /fligths/:id/tickets/new
+
+router.get('/flights/:id/tickets/new', ticketsCtrl.new);
+
 
 module.exports = router;
