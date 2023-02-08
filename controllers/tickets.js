@@ -6,9 +6,13 @@ module.exports = {
     create,
     new: newTicket,
 };
+
 function create(req, res) {
-  Ticket.create(req.body, function (err, ticket) {
-    res.render('tickets/new', { flightId: req.params.id } );
+  Ticket.create(req.params.id, function (err, ticket) {
+    ticket.flight.push(req.body.flightId);
+    ticket.save(function(err) {
+    res.render('tickets/new', { flightId: req.params.id } )
+    });
   });
 }
 
