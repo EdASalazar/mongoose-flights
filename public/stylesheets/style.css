@@ -44,7 +44,16 @@ td {
   width: 50%;
 }
 
+#add-ticket-inputs > label {
+  margin: 1vh;
 
+
+}
+
+#add-ticket-inputs input[type="submit"] {
+  width: 8rem;
+  margin-top: 1rem;
+}
 
 #add-arrival-form input[type="submit"] {
   width: 8rem;
