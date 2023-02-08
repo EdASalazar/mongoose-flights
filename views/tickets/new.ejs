@@ -1,15 +1,15 @@
 <%- include('../partials/header') %>
 <h2>Add Ticketing Information</h2>
-
-<form id="add-ticket-form" action="/flights/<%= flight._id %>/tickets" method="POST">
+<form id="udpate-ticket-info" action="/flights/<%= flightId %>/tickets"  method="POST" >
     <label>Seat:
-        <input type="text" name="seat" required pattern="[A-F][1-9]\d?"></input>
-        </label>Price:
-        <input type="number" name="price"></input>  
-    </label> <br>
+        <input type="text" name="seat" required pattern="[A-F][1-9]\d?" value="A9"></input>
+    </label>
+    <label>Price:
+        <input type="number" name="price" value="100"></input>
+    </label>
+        <input type="text" name="flight"><%= flightId%></input>
     <input type="submit" value="Update Ticket">
-    </form>
-
+</form>
 
 
 <%- include('../partials/footer') %>

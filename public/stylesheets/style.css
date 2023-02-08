@@ -64,3 +64,11 @@ td {
   background-color: white;
   border: solid darkgray .25vh;
 }
+
+#udpate-ticket-info {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  padding: 1vh;
+
+}
