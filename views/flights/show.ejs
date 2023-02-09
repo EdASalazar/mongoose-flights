@@ -12,10 +12,18 @@
     <div><%= flight.departs %></div>
     <div>Seat: </div>
     <div><%= tickets.seat %></div>
-    <div>Ticket Pricet: </div>
+    <div>Ticket Price: </div>
     <div><%= tickets.price %></div>
 
-        <% flight.destinations.forEach(function(f) { %>
+        <% ticket.forEach(function(f) { %>
+            <div>Destionation Airport:</div>
+            <div><%= f.airport %></div>
+            <div>Destination Date:</div>
+            <div><%= f.arrival %></div>
+        <% }); %>
+    
+        <% flight.destinations.forEach(function(f) { 
+            if (%>
             <div>Destionation Airport:</div>
             <div><%= f.airport %></div>
             <div>Destination Date:</div>

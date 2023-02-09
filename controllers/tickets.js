@@ -8,12 +8,11 @@ module.exports = {
 };
 
 function create(req, res) {
-  Ticket.create(req.params.id, function (err, ticket) {
-    ticket.flight.push(req.body.flightId);
-    ticket.save(function(err) {
-    res.render('tickets/new', { flightId: req.params.id } )
-    });
+  req.body.flight = req.params.id;;
+  Ticket.create(req.body, function(err, ticket) {
+    res.redirect(`/flights/${req.params.id}`)
   });
+
 }
 
 function newTicket(req, res) {
