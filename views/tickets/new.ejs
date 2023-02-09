@@ -2,10 +2,10 @@
 <h2>Add Ticketing Information</h2>
 <form id="udpate-ticket-info" action="/flights/<%= flightId %>/tickets"  method="POST" >
     <label>Seat:
-        <input type="text" name="seat" required pattern="[A-F][1-9]\d?" value="A9"></input>
+        <input type="text" name="seat" required pattern="[A-F][1-9]\d?"></input>
     </label>
     <label>Price:
-        <input type="number" name="price" value="100"></input>
+        <input type="number" name="price"></input>
     </label>
     <input  id="ticket-button" type="submit" value="Update Ticket">
 </form>
