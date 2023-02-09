@@ -34,11 +34,8 @@
 
                 <table id="ticket-table">
                     <% tickets.forEach(function(t) { %>
-                        <td>Seat: <%= t.seat %>
-                        </td>
-                        <tbody id="ticket-body">
-                            <td>Ticket Price: $<%= t.price %>
-                            </td>
+                        <td>Seat: <%= t.seat %> </td>
+                        <td>Ticket Price: $<%= t.price %></td>
                             </tr>
                         </tbody>
                         <% }); %>
