@@ -72,3 +72,13 @@ td {
   padding: 1vh;
 
 }
+
+#ticket-table {
+  display: flex;
+ 
+  justify-content: space-between;
+  
+}
+#ticket-body {
+  background-color: white;
+}

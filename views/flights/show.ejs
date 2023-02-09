@@ -10,7 +10,7 @@
     <div><%= flight.flightNo %></div>
     <div>Departure Date: </div>
     <div><%= flight.departs %></div>
-    <table>
+    <table id="ticket-table">
         <thead>
             <tr>
                 <th>Seat: </th>
@@ -19,9 +19,9 @@
         </thead>
         <tr>
      <% tickets.forEach(function(t) { %>
-        <tbody>
+    <tbody id = "ticket-body">
         <td><%= t.seat %></td>
-        <td><%= t.price %></td>
+        <td>$<%= t.price %></td>
         </tr>
     </tbody>
         <% }); %>
