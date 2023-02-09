@@ -67,9 +67,9 @@ td {
 
 #udpate-ticket-info {
   display: grid;
+  justify-items: center;
   grid-template-columns: auto;
   grid-template-rows: auto;
-  padding: 1vh;
 
 }
 
@@ -82,4 +82,10 @@ td {
 }
 #ticket-body {
   background-color: white;
+}
+
+#ticket-button {
+  width: 8rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
