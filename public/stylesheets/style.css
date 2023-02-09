@@ -74,9 +74,10 @@ td {
 }
 
 #ticket-table {
-  display: flex;
- 
+  display: inline-block;
+  flex-direction: column;
   justify-content: space-between;
+  
   
 }
 #ticket-body {
